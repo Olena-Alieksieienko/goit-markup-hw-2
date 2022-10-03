@@ -98,7 +98,7 @@
 
 /* ------------ Переваги ------------  */
 
-.benefits-list .benefits-title .employees-name .work {
+.benefits-list .benefits-title .employees-name {
   color: var(--title-text-color);
 }
 
@@ -132,6 +132,11 @@ border-color: transparent;
 .button.primary:focus {
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
+}
+
+.card:hover,
+.card:focus {
+  color: var(--accent-color);
 }
 
 
