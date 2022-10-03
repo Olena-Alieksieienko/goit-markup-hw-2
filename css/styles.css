@@ -1,14 +1,13 @@
-/* білий color: #FFFFFF; */
-/* фон герою background: #2F303A; */
+
 /* фон наша команда background: #F5F4FA; */
 
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --secondary-accent-color: #ffffff;
+  --secondary-accent-color: #FFFFFF;
   --hero-bg-color: #2f303a;
-  --secondary-bg-color: #f5f4fa;
+  --secondary-bg-color: #F5F4Fa;
 }
 
 .site-body {
@@ -31,7 +30,7 @@
 /* ------------ Хедер ------------  */
 
 .header {
-  background-color: inherit;
+  background-color: var(--secondary-accent-color);
 }
 
 /* ---------- Лого ---------- */
@@ -93,8 +92,11 @@
 
 /* ------------ Герой ------------  */
 
-.hero-title {
+.hero {
   background: var(--hero-bg-color);
+}
+
+.hero-title {
   color: var(--secondary-accent-color);
   font-weight: 900;
   font-size: 44px;
@@ -105,21 +107,21 @@
 }
 
 .button {
+  background:var(--accent-color);
   color: var(--secondary-accent-color);
-  background-color: var(--accent-color);
-  border-color: transparent;
-  font-family: 'Roboto';
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.06em;
+  border-color: transparent;
 }
 
 .button:hover,
 .button:focus {
-   color: var(--secondary-accent-color);
-  background-color: var(--accent-color);
+background-color: #188CE8;
+color: var(--secondary-accent-color)
 }
 
 /* ------------ Секція ------------  */
@@ -164,6 +166,10 @@
 
 /* ----------Співробітники---------- */
 
+.employees {
+  background-color: var(--secondary-bg-color);
+}
+
 .employees-name {
   color: var(--title-text-color);
   font-weight: 500;
@@ -182,22 +188,51 @@
 
 /* ----------Портфоліо----------*/
 
-.button.primary {
+.portfolio {
+  background-color: #F5F5F5;
+}
+
+.filter-button {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   border-color: transparent;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.button.primary:hover,
-.button.primary:focus {
+.filter-button:hover,
+.filter-button:focus {
   color: var(--secondary-accent-color);
   background-color: var(--accent-color);
 }
 
-.card:hover,
-.card:focus {
-  color: var(--accent-color);
+.work {
+  color: var(--title-text-color);
+font-weight: 700;
+font-size: 18px;
+line-height: calc(36 / 18);
+letter-spacing: 0.06em;
 }
+
+.filter-types {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+
+  .work:hover,
+  .work:focus,
+  .filter-types:hover,
+  .filter-types:focus {
+  color: var(--accent-color);
+  }
 
 /* ----------Футер---------- */
 
@@ -223,7 +258,7 @@
 
 .address-location {
   color: var(--secondary-accent-color);
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
