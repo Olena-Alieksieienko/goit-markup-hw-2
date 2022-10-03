@@ -1,6 +1,20 @@
-body {
+/* білий color: #FFFFFF; */
+/* фон герою background: #2F303A; */
+/* фон наша команда background: #F5F4FA; */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --secondary-accent-color: #ffffff;
+  --hero-bg-color:#2F303A;
+  --secondary-bg-color: #F5F4FA;
+}
+
+.site-body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffffff;
+  background-color: var(--secondary-accent-color);
+  color: var(--title-text-color);
 }
 
 /*Прибирає крапки в li*/
@@ -13,10 +27,10 @@ body {
   text-decoration: none;
 }
 
-/* ------------ HEADER ------------  */
+/* ------------ Хедер ------------  */
 
 .header {
-  background-color: #ffffff;
+  background-color: inherit;
 }
 
 .header-logo {
@@ -29,11 +43,120 @@ body {
   color: #000000;
 }
 
-.header-logo-blue {
-  color: #2196f3;
+.logo-accent {
+  color: var(--accent-color);
 }
 
-.header-link {
+.header-logo:hover,
+.header-logo:focus {
+  color: var(--accent-color);
+}
+
+.header-list .header-link.current {
+  color: var(--accent-color)
+}
+
+.header-list .header-link {
+  color: var(--title-text-color);
+}
+
+
+.header-list .header-link:hover,
+.header-list .header-link:focus {
+  color: var(--accent-color);
+}
+
+.contact-list .header-mail,
+.header-tel {
+  color: var(--primary-text-color);
+}
+
+.contact-list .header-mail:hover,
+.contact-list .header-mail:focus,
+.contact-list .header-tel:hover,
+.contact-list .header-tel:focus {
+  color: var(--accent-color);
+}
+
+/* ------------ Герой ------------  */
+
+.hero-title {
+  color: var(--secondary-accent-color);
+}
+
+.button {
+  color: var(--secondary-accent-color);
+  background-color: var(--accent-color);
+  border-color: transparent;
+}
+
+/* ------------ Секція ------------  */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* ------------ Переваги ------------  */
+
+.benefits-list .benefits-title .employees-name .work {
+  color: var(--title-text-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ----------Співробітники---------- */
+.specification {
+  color: var(--primary-text-color);
+}
+
+/* ----------Портфоліо----------*/
+
+.button.primary {
+color: var(--title-text-color);
+background-color: var(--secondary-bg-color);
+border-color: transparent;
+}
+
+.button.primary:hover,
+.button.primary:focus {
+  color: var(--secondary-accent-color);
+  background-color: var(--accent-color);
+}
+
+
+
+/* ----------Футер---------- */
+
+.header-logo-white {
+  color: var(--secondary-accent-color);
+}
+
+.address-list a {
+  color: var(--secondary-accent-color);
+}
+
+.address-list .address-location:hover,
+.address-list .address-location:focus,
+.address-list .footer-mail:hover,
+.address-list .footer-mail:focus,
+.address-list .footer-tel:hover,
+.address-list .footer-tel:focus {
+  color: var(--accent-color);
+  background-color: var(--hero-bg-color);
+}
+
+/* .header-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -55,14 +178,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
-}
+} */
 
 /* ------------ HERO ------------  */
 
-.hero {
-}
+/* .hero {
+  background: #2f303a;
+} */
 
-.hero-title {
+/* .hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -72,17 +196,3 @@ body {
   color: #ffffff;
 }
 
-.hero-btn {
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #ffffff;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
