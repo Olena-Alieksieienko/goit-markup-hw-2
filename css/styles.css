@@ -7,7 +7,9 @@
   --accent-color: #2196f3;
   --secondary-accent-color: #FFFFFF;
   --hero-bg-color: #2f303a;
-  --secondary-bg-color: #F5F4Fa;
+  --secondary-bg-color: #F5F4FA;
+  --hover-btn-color: #188CE8;
+  --header-logo-text-color: #000000;
 }
 
 .site-body {
@@ -36,7 +38,7 @@
 /* ---------- Лого ---------- */
 
 .header-logo {
-  color: #000000;
+  color: var(--header-logo-text-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -48,7 +50,6 @@
   color: var(--accent-color);
 }
 
-.header-logo:hover,
 .header-logo:focus {
   color: var(--accent-color);
 }
@@ -120,7 +121,7 @@
 
 .button:hover,
 .button:focus {
-background-color: #188CE8;
+background-color: var(--hover-btn-color);
 color: var(--secondary-accent-color)
 }
 
@@ -170,6 +171,10 @@ color: var(--secondary-accent-color)
   background-color: var(--secondary-bg-color);
 }
 
+.employees-bg {
+  background-color: var(--secondary-accent-color);
+}
+
 .employees-name {
   color: var(--title-text-color);
   font-weight: 500;
@@ -189,7 +194,6 @@ color: var(--secondary-accent-color)
 /* ----------Портфоліо----------*/
 
 .portfolio {
-  background-color: #F5F5F5;
 }
 
 .filter-button {
@@ -282,6 +286,5 @@ letter-spacing: 0.06em;
   line-height: 1.71;
 }
 
-.footer-logo:hover,
 .footer-logo:focus {
   color: var(--accent-color);
